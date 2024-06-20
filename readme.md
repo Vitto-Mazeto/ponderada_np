@@ -58,7 +58,7 @@ Por fim, essa redução mostra que o problema do caminho hamiltoniano é NP-dif�
 *Figura 3: Adição de Nós Fonte e Alvo*
 
 ### Passo 4: Conectando Nós Fonte e Alvo aos Caminhos
-- Conectar o nó fonte $s$ ao primeiro e último nó de $P_1 $ e o primeiro e último nó de $P_4 $ ao nó alvo $t$.
+- Conectar o nó fonte $s$ ao primeiro e último nó de $P_1$ e o primeiro e último nó de $P_4$ ao nó alvo $t$.
 
 ![Conexão de Nós Fonte e Alvo](images/4.png)
 *Figura 4: Conectando Nós Fonte e Alvo aos Caminhos*
@@ -77,7 +77,7 @@ Por fim, essa redução mostra que o problema do caminho hamiltoniano é NP-dif�
 
 ### Passo 7: Conectando Cláusulas aos Caminhos
 1. Conectar cada nó de cláusula $C_j$ aos nós $v_{i,2j-1}$ e $v_{i,2j}$ do caminho $P_i$ correspondente à variável $x_i$.
-2. Direcionar as arestas dependendo se a cláusula contém $x_i$ ou $ \neg x_i$.
+2. Direcionar as arestas dependendo se a cláusula contém $x_i$ ou $\neg x_i$.
 
 ![Conectando Cláusulas](images/7.png)
 *Figura 7: Conectando Cláusulas aos Caminhos*
@@ -95,5 +95,5 @@ Cada cláusula $C_j$ é representada por um nó no grafo. Este nó será conecta
 
 2. **Direcionamento das Arestas**:
    - **Aresta Direta (Esquerda para Direita)**: Se $C_j$ contém $x_i$ (ou seja, a variável sem negação), a aresta é adicionada de $C_j$ para $v_{i,2j-1}$ e de $v_{i,2j}$ para $C_j$. Isso simboliza que a cláusula é satisfeita se $x_i$ é verdadeiro.
-   - **Aresta Inversa (Direita para Esquerda)**: Se $C_j$ contém $ \neg x_i$ (a negação da variável), a aresta é adicionada de $v_{i,2j-1}$ para $C_j$ e de $C_j$ para $v_{i,2j}$. Isso representa que a cláusula é satisfeita se $x_i$ é falso.
+   - **Aresta Inversa (Direita para Esquerda)**: Se $C_j$ contém $\neg x_i$ (a negação da variável), a aresta é adicionada de $v_{i,2j-1}$ para $C_j$ e de $C_j$ para $v_{i,2j}$. Isso representa que a cláusula é satisfeita se $x_i$ é falso.
 
